@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading: Sen, sans-serif;
+  --primary: #1ebfc1;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/*Common*/
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% - 24px);
+}
+.btn {
+  display: inline-block;
+  min-width: 186px;
+  padding: 20px 12px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 14px;
+  line-height: 1.55;
+  color: #fff;
+  cursor: pointer;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 58px;
+  font-style: normal;
+  letter-spacing: -1.16px;
+  color: #171100;
+}
+.heading.lv1 {
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+}
+.heading.lv2 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+/*Header*/
+.header {
+  background-color: #fff;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
+}
+.header .body {
+  align-items: center;
+  display: flex;
+  padding: 36px 0 8px;
+}
+
+.header .sign-up-btn {
+  min-width: 108px;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  padding: 8px 19px; /*căn trái phải đo được bao nhiêu rồi chia đôi*/
+  color: #2f3a3b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav li.active a {
+  color: #2f3a3b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.nav a:hover,
+.nav li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+.header .action .sign-in-btn {
+  color: #494949;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .action .sign-up-btn:hover {
+  background: #2ac9bf;
+  color: #fff;
+}
+.header .action .sign-up-btn {
+  color: #1ebfc1;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
